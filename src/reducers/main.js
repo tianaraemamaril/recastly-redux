@@ -1,11 +1,15 @@
 import { combineReducers } from 'redux';
-import currentVideo from './currentVideo.js';
-import videoList from './videoList.js';
+import currentVideoReducer from './currentVideo.js';
+import videoListReducer from './videoList.js';
+import changeVideo from '../actions/currentVideo.js';
+import changeVideoList from '../actions/videoList.js';
 
-var rootReducer = () => ({
-  changeVideo,
-  changeVideoList
-});
+
+var rootReducer = (state, action) => {
+  // changeVideo,
+  // changeVideoList
+  return {};
+};
 
 //TODO: define the root reducer for this app
 
